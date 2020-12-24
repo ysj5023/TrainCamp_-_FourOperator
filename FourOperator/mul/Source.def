@@ -1,0 +1,3 @@
+LIBRARY "mul"
+EXPORTS
+ mul @1
