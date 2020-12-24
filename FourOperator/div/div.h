@@ -1,3 +1,3 @@
 #pragma once
 
-int div(int x, int y);
+int divi(int x, int y);

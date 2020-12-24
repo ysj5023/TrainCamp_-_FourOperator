@@ -18,6 +18,7 @@ DLL_API int sub(int x, int y)
 		if (x < INT_MIN + y)
 		{
 			cout << "²îÒç³ö£¡" << endl;
+			return 0;
 		}
 	}
 	return x - y;

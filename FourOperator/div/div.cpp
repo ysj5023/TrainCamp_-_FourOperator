@@ -1,12 +1,14 @@
 #include"div.h"
 #include<iostream>
 #include<Windows.h>
-#include"add.h"
-#include"sub.h"
+#include"..\add\add.h"
+#include"..\sub\sub.h"
 using namespace std;
 
 
-int div(int x, int y)
+
+
+int divi(int x, int y)
 {
 	if (y==0)
 	{
@@ -33,9 +35,9 @@ int main()
 	typedef int(*p)(int x, int y);
 	p ji = (p)GetProcAddress(handle, "mul");
 	int cheng = ji(x, y);
-	cout << "两数积为："<<cheng << endl;
+	cout << "两数积为：" << cheng << endl;
 
-	cout <<"两数商为："<< div(x, y) << endl;
+	cout << "两数商为：" << divi(x, y) << endl;
 
 	system("pause");
 	return 0;

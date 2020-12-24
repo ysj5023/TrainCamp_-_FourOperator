@@ -14,11 +14,12 @@ int add(int x, int y)
 			return 0;
 		}
 	}
-	else if (x < 0 && x < y)
+	else if (x < 0 && y < 0)
 	{
 		if (x < INT_MIN - y)
 		{
 			cout << "ºÍÒç³ö£¡" << endl;
+			return 0;
 		}
 	}
 	return x + y;
