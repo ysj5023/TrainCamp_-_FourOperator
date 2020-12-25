@@ -14,3 +14,4 @@
 *.pch
 *.suo
 *.ipch
+*.coverage
